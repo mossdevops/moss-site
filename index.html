@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+  privacy.html - Moss privacy policy
+
+  Ready to publish. Two things to know before you do:
+
+  1. The bug-report URL below is https://forms.gle/zuCGq8ZRNsy1Zano9
+     Your message contained a markdown link whose visible text was a
+     DIFFERENT id (5NLytwoc8Z6ha6NP9) from its target. I used the target,
+     since that's the one your browser would actually follow. Open the page
+     once and confirm it's the description-only form before you ship.
+
+  2. "Moss" is capitalised everywhere it is the product's name. It stays
+     lowercase in exactly one place - the literal folder path
+     %LOCALAPPDATA%\moss - because that is a filesystem string, not a name.
+
+  Host it anywhere with a public URL. GitHub Pages is free and takes five
+  minutes - see the notes I sent alongside this file.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Moss</title>
+<style>
+  :root {
+    --ink: #1c2620;
+    --soft: #4a5a52;
+    --accent: #2a7d61;
+    --rule: #dfe6e2;
+    --bg: #fbfcfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8efea;
+      --soft: #a7b6ae;
+      --accent: #6fc9a4;
+      --rule: #2a332e;
+      --bg: #121714;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 24px 96px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 660px; margin: 0 auto; }
+  h1 { font-size: 30px; letter-spacing: -0.4px; margin: 0 0 6px; }
+  .sub { color: var(--soft); font-size: 14px; margin: 0 0 40px; }
+  h2 {
+    font-size: 17px; letter-spacing: -0.2px; margin: 38px 0 10px;
+    padding-top: 20px; border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    padding: 1px 5px; border-radius: 4px; font-size: 14px;
+  }
+  .lede {
+    font-size: 18px; line-height: 1.55;
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 16px; margin: 0 0 32px;
+  }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; color: var(--soft); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Moss · last updated August 11, 2026</p>
+
+  <p class="lede">
+    Moss runs entirely on your computer. It does not collect, transmit, or
+    store your information anywhere except on your own device.
+  </p>
+
+  <h2>What Moss collects</h2>
+  <p>
+    Nothing. Moss has no analytics, no telemetry, no crash reporting, and no
+    accounts. It does not make network requests during normal use.
+  </p>
+
+  <h2>What stays on your device</h2>
+  <p>Everything you give Moss is written only to your local user folder:</p>
+  <ul>
+    <li>Reminders, alarms, and recurring schedule items</li>
+    <li>Notes you dictate or type</li>
+    <li>Preferences such as theme, sound levels, and window scale</li>
+  </ul>
+  <p>
+    These live under <code>%LOCALAPPDATA%\moss</code> and never leave your
+    machine. Uninstalling Moss removes them.
+  </p>
+
+  <h2>Speech</h2>
+  <p>
+    When you press the microphone button, audio is recorded and transcribed by
+    a speech model that is installed with Moss and runs on your own processor.
+    The recording is held in memory only for as long as the transcription takes
+    and is not saved. No audio is uploaded anywhere.
+  </p>
+
+  <h2>The language model</h2>
+  <p>
+    Moss understands what you say using a language model bundled inside the
+    application and executed locally on your CPU. Your words are not sent to
+    any external service, and Moss works with no internet connection at all.
+  </p>
+
+  <h2>Purchases</h2>
+  <p>
+    The full version is sold through the Microsoft Store. Microsoft processes
+    the payment and holds your billing details; Moss never sees them. All Moss
+    receives is whether this copy is licensed for the full version. See
+    <a href="https://privacy.microsoft.com/privacystatement">Microsoft's privacy
+    statement</a> for how they handle purchases.
+  </p>
+
+  <h2>Bug reports</h2>
+  <p>
+    Reporting a bug is entirely optional. The report form at
+    <a href="https://forms.gle/zuCGq8ZRNsy1Zano9">forms.gle/zuCGq8ZRNsy1Zano9</a>
+    asks only for a description of the problem — it does not ask for your name,
+    your email address, or any other identifying detail. Whatever you type there
+    is sent to me through Google Forms and is handled under
+    <a href="https://policies.google.com/privacy">Google's privacy policy</a>.
+    Please do not include anything private in a report. Moss never sends
+    anything to that form on its own.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Moss is a general-purpose scheduling tool and is not directed at children.
+    It collects no information from anyone, of any age.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy ever changes, the updated version will be posted here with a
+    new date. Since Moss collects nothing, any change would be a clarification
+    rather than a new use of your data.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about privacy, or anything else:
+    <a href="mailto:moss.devops@gmail.com">moss.devops@gmail.com</a>
+  </p>
+
+  <footer>
+    Moss is a local-first scheduling widget for Windows 11.
+  </footer>
+
+</main>
+</body>
+</html>
